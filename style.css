@@ -1,0 +1,89 @@
+/* Estilos generales y reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde muy claro de fondo */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+h1, H2 {
+    color: #2e7d32; /* Verde oscuro para el título */
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Campo de texto para la URL */
+#urlInput {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #c8e6c9; /* Borde verde claro */
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#urlInput:focus {
+    outline: none;
+    border-color: #4CAF50; /* Resaltado verde al seleccionar */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Botón grande */
+#generateBtn {
+    width: 100%;
+    padding: 18px;
+    background-color: #4CAF50; /* Color principal del botón */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateBtn:hover {
+    background-color: #388e3c; /* Tono más oscuro al pasar el ratón */
+}
+
+/* Contenedor del código QR */
+#qrCodeContainer {
+    margin-top: 30px;
+    /* Centra el QR que se genera adentro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; /* Espacio mínimo antes de generar */
+}
+
+/* El elemento img que se crea dentro del contenedor */
+#qrCodeContainer img {
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

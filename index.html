@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>WEBLOCALMX.COM</h1>
+        <h2>Generador de Códigos QR</h2>
+        <p>Ingresa una URL o cualquier texto para generar tu código QR al instante.</p>
+        
+        <input type="text" id="urlInput" placeholder="https://ejemplo.com">
+        
+        <button id="generateBtn">Generar QR</button>
+        
+        <div id="qrCodeContainer">
+            <!-- El código QR se mostrará aquí -->
+        </div>
+    </div>
+
+    <!-- Librería externa para generar el QR (qrcode.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Tu script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
